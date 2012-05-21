@@ -48,6 +48,7 @@ Partial Class Form1
         Me.KryptonContextMenuCheckButton1 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton()
         Me.KryptonContextMenuCheckBox1 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox()
         Me.KryptonContextMenuItem1 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem()
+        Me.KryptonContextMenuItem2 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem()
         Me.KryptonContextMenuCheckBox2 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox()
         Me.KryptonContextMenuItem3 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem()
         Me.StatusStrip1.SuspendLayout()
@@ -169,7 +170,7 @@ Partial Class Form1
         '
         'KryptonContextMenuItems1
         '
-        Me.KryptonContextMenuItems1.Items.AddRange(New ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase() {Me.KryptonContextMenuItem1})
+        Me.KryptonContextMenuItems1.Items.AddRange(New ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase() {Me.KryptonContextMenuItem1, Me.KryptonContextMenuItem2})
         '
         'KryptonContextMenuItems3
         '
@@ -190,6 +191,12 @@ Partial Class Form1
         Me.KryptonContextMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.O
         Me.KryptonContextMenuItem1.ShowShortcutKeys = False
         Me.KryptonContextMenuItem1.Text = "&Open DesktopTrakt"
+        '
+        'KryptonContextMenuItem2
+        '
+        Me.KryptonContextMenuItem2.Image = Global.WindowsApplication1.My.Resources.Resources.Configuration_icon_by_obsilion__Custom_
+        Me.KryptonContextMenuItem2.ImageTransparentColor = System.Drawing.Color.White
+        Me.KryptonContextMenuItem2.Text = "&Configure"
         '
         'KryptonContextMenuCheckBox2
         '
@@ -256,5 +263,6 @@ Partial Class Form1
     Friend WithEvents KryptonContextMenuCheckBox1 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox
     Friend WithEvents KryptonContextMenuItems3 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems
     Friend WithEvents KryptonContextMenuItem3 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem
+    Friend WithEvents KryptonContextMenuItem2 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem
 
 End Class

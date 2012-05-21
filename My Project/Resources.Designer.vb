@@ -74,6 +74,20 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property Configuration_icon_by_obsilion__Custom_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Configuration_icon_by_obsilion (Custom)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property configure() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("configure", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property DesktopTrakt_16x16() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("DesktopTrakt_16x16", resourceCulture)
